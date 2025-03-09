@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+FR+Trad+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+
 * {
     margin:0px;
     padding: 0px;
@@ -16,7 +17,7 @@
 }
 
 body{
-    background-color: #212121;
+    /* background-color: #212121; */
 }
 
 .src{
@@ -29,12 +30,27 @@ body{
 ul{
     margin-right:550px;
 }
-li{
-    display:inline;
-    margin:30px;
-    font-size:light;
-    font-family:trade
+
+@font-face {
+    font-family: "Trade Gothic BoldCond";
+    src: url(images/Trade\ Gothic\ Bold\ Condensed\ No.\ 20.otf) format("opentype");
+    font-weight: bold;  
+    font-style: normal;
+}
+
+/* Apply the font to the list items */
+li {
+    display: inline-block;
+    margin: 30px;
+    font-size: 18px; 
+    font-family: "Trade Gothic BoldCond", sans-serif;
+    padding-bottom: 1px;
     
+}
+li:hover{
+    /* text-decoration: underline; */
+    cursor: pointer;
+    border-bottom: 1px solid;
 }
 
 nav{
@@ -45,4 +61,49 @@ nav{
     justify-content:  space-between;
     align-items:center;
     background-color: whitesmoke;
+}
+
+.hero{
+    height:100vh;
+    background-image: url(images/Nike\ Joy\ irde.jpg);
+    background-position:right;
+    background-size: cover;
+}
+
+
+.combo{
+    margin-right: 60px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content:center;
+}
+.joy{
+    font-family:Futura;
+    font-size: 120px;
+    margin-top: 100px;
+    letter-spacing: 2px;
+    /* margin-right: 40px;
+    margin-bottom: 0px;
+    padding-bottom: 50px; */
+}
+.head{
+    font-family: var(--sec-font);
+    letter-spacing: 1px;
+    font-size:25px;
+    /* margin-right: 40px;
+    padding-bottom:50px; */
+
+}
+.price{
+    font-family: "Trade Gothic BoldCond";
+    font-size:28px;
+    margin-top: 10px;
+    padding-right:285px;
+}
+.info{
+    height:38%;
+    width:24%;
+    margin-top: 35px;
 }
